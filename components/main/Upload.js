@@ -74,7 +74,7 @@ export default function Add ({ navigation }) {
       </Button>
       <Button color="#000"  title="Take Picture" onPress={() => takePicture()}/>
       <Button color="#000" title="Pick Image From Gallery" onPress={() => pickImage()} />
-      <Button color="#000" title="Save" onPress={() => navigation.navigate('Save', { image })} />
+      <Button color="#000" title="Upload" onPress={() => navigation.navigate('Uploadbut', { image })} />
       {image && <Image source={{ uri: image }} style={{ flex: 1 }} />}
     </View>
   );

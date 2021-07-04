@@ -1,11 +1,13 @@
-import React from 'react'
-import { Text, View, Button } from 'react-native'
+import React, { useState, useEffect } from 'react'
+import { StyleSheet, Text, View, Button } from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export default function Landing({ navigation }) {
     return (
-        <View style={{ flex: 1, justifyContent: 'center' }}>
-            <Text style={{ textAlignVertical: "center", textAlign: "center", fontSize: 50 }} >
-                Solent Inspire
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Icon name='fire' style={{ fontSize: 50, textAlign: 'center' }}></Icon>
+            <Text style={{ textAlignVertical: "center", textAlign: "center", fontSize: 35, fontWeight: 'bold', height: 300 }} >
+                SOLENT INSPIRE
             </Text>
             <Button
                 color="#000"

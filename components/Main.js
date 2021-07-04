@@ -29,7 +29,7 @@ export class Main extends Component {
                 <Tab.Screen name="Feed" component={FeedScreen}
                     options={{
                         tabBarIcon: ({ color, size }) => (
-                            <MaterialCommunityIcons name="home-heart" color={color} size={26} />
+                            <MaterialCommunityIcons name="table-column" color={color} size={26} />
                         ),
                     }} />
                 <Tab.Screen name="Search" component={SearchScreen} navigation={this.props.navigation}
@@ -47,7 +47,7 @@ export class Main extends Component {
                     })}
                     options={{
                         tabBarIcon: ({ color, size }) => (
-                            <MaterialCommunityIcons name="plus-circle-outline" color={color} size={26} />
+                            <MaterialCommunityIcons name="plus-box-outline" color={color} size={26} />
                         ),
                     }} />
                 <Tab.Screen name="Profile" component={ProfileScreen} 

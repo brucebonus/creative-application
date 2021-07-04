@@ -35,7 +35,7 @@ import RegisterScreen from './components/auth/Register'
 import LoginScreen from './components/auth/Login'
 import MainScreen from './components/Main'
 import UploadScreen from './components/main/Upload'
-import SaveScreen from './components/main/Save'
+import UploadbutScreen from './components/main/Uploadbut'
 import CommentScreen from './components/main/Comment'
 
 
@@ -80,8 +80,8 @@ export class App extends Component {
         <NavigationContainer>
           <Stack.Navigator initialRouteName="Landing">
             <Stack.Screen name="Landing" component={LandingScreen} options={{ headerShown: false }} />
-            <Stack.Screen name="Register" component={RegisterScreen} />
-            <Stack.Screen name="Login" component={LoginScreen} />
+            <Stack.Screen name="Register" component={RegisterScreen} options={{headerTitleAlign: 'center'}}/>
+            <Stack.Screen name="Login" component={LoginScreen} options={{headerTitleAlign: 'center'}}/>
           </Stack.Navigator>
         </NavigationContainer>
       );
@@ -91,9 +91,9 @@ export class App extends Component {
       <Provider store={store}>
         <NavigationContainer >
           <Stack.Navigator initialRouteName="Main">
-            <Stack.Screen name="Solent Inspire" component={MainScreen} options={{headerTitleAlign: 'center'}}/>
-            <Stack.Screen name="Upload" component={UploadScreen} navigation={this.props.navigation} options={{headerTitleAlign: 'center'}}/>
-            <Stack.Screen name="Save" component={SaveScreen} navigation={this.props.navigation} options={{headerTitleAlign: 'center'}}/>
+            <Stack.Screen name="SOLENT INSPIRE" component={MainScreen} options={{headerTitleAlign: 'center'}}/>
+            <Stack.Screen name="Upload" component={UploadScreen} navigation={this.props.navigation} options={{headerTitleAlign: 'center', title:'UPLOAD'}}/>
+            <Stack.Screen name="Uploadbut" component={UploadbutScreen} navigation={this.props.navigation} options={{headerTitleAlign: 'center', title:'Upload'}}/>
             <Stack.Screen name="Comment" component={CommentScreen} navigation={this.props.navigation} options={{headerTitleAlign: 'center'}}/>
           </Stack.Navigator>
         </NavigationContainer>

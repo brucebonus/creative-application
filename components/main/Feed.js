@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import { StyleSheet, View, Text, Image, FlatList, Button } from 'react-native'
+import moment from 'moment'
 
 import firebase from 'firebase'
 require('firebase/firestore')
@@ -50,8 +52,9 @@ function Feed(props) {
                     renderItem={({ item }) => (
                         <View
                             style={styles.containerImage}>
-                            <Text style={{...styles.container, ...styles.bold}}>{item.user.name}
+                            <FontAwesome5 style={{paddingLeft:5}} name={'user-alt'}> <Text style={{...styles.container, ...styles.bold}}>{item.user.name}
                             </Text>
+                             </FontAwesome5>
                             <Image
                                 style={styles.image}
                                 source={{ uri: item.downloadURL }}
@@ -75,13 +78,16 @@ function Feed(props) {
                                         onPress={() => onLikePress(item.user.uid, item.id)} >  </Icon.Button>
                                 )
                             }
-                            <Text style={{ fontWeight: 'bold' }}>
+                            <Text style={{ fontWeight: 'bold', paddingLeft:5}}>
                                 {item.user.name}
                                 <Text style={{ fontWeight: 'normal' }}> {item.caption}</Text>
                             </Text>
-                            <Text
+                            <Text style={{color:'#808080', paddingLeft:5}}
                                 onPress={() => props.navigation.navigate('Comment', { postId: item.id, uid: item.user.uid })}>
                                 Add a comment...
+                            </Text>
+                            <Text style={{color:'#c0c0c0', paddingLeft:5, fontSize:10}}>
+                                {moment(item.creation.toDate()).startOf('hour').fromNow()}
                             </Text>
                         </View>
 
@@ -96,7 +102,7 @@ function Feed(props) {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 1
     },
     containerInfo: {
         margin: 20
@@ -105,8 +111,8 @@ const styles = StyleSheet.create({
         flex: 1
     },
     containerImage: {
-        flex: 1 / 3
-
+        flex: 1 / 3,
+        paddingVertical: 10
     },
     image: {
         flex: 1,

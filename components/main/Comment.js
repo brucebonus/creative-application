@@ -79,7 +79,7 @@ function Comment(props) {
                 renderItem={({ item }) => (
                     <View>
                         {item.user !== undefined ?
-                            <Text>
+                            <Text style={{fontWeight:'bold'}}>
                                 {item.user.name}
                             </Text>
                             : null}
