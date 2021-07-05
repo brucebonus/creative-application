@@ -1,10 +1,12 @@
 {
   "expo": {
-    "name": "creativeapplication",
+    "name": "SOLENT INSPIRE",
     "slug": "creativeapplication",
+    "privacy":"public",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "githubUrl":"https://github.com/brucebonus/creative-application",
+    "icon": "./assets/fire.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -27,6 +29,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "A Creative Collaboration Application - Browse for inspiration and upload your creativity"
   }
 }
