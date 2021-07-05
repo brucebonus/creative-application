@@ -8,4 +8,4 @@ To access the application on a mobile device, follow these steps:
 2.	Open this link on your device to preview channel. exp://exp.host/@bruce_bonus/creativeapplication
 3.	Or scan this QR code using your device camera.
 
-![application QR code](/assests/creativeapplicationQR.png)
+![QR](/assests/creativeapplicationQR.png)
