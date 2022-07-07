@@ -2,10 +2,10 @@
   "expo": {
     "name": "SOLENT INSPIRE",
     "slug": "creativeapplication",
-    "privacy":"public",
+    "privacy": "public",
     "version": "1.0.0",
     "orientation": "portrait",
-    "githubUrl":"https://github.com/brucebonus/creative-application",
+    "githubUrl": "https://github.com/brucebonus/creative-application",
     "icon": "./assets/fire.png",
     "splash": {
       "image": "./assets/splash.png",

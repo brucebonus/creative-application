@@ -19,8 +19,8 @@ const firebaseConfig = {
   projectId: "creativeapp-development",
   storageBucket: "creativeapp-development.appspot.com",
   messagingSenderId: "1097013295918",
-  appId: "1:1097013295918:web:61cad548c0b25864e558bf",
-  measurementId: "G-ZPR3X4Z5FK"
+  appId: "1:1097013295918:web:15d19bc507d965cde558bf",
+  measurementId: "G-GGJFKSCZ1H"
 };
 
 if (firebase.apps.length === 0) {
